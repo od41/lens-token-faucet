@@ -68,10 +68,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -165,4 +162,28 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.error {
+  color: #842029;
+  background-color: #f8d7da;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.loading {
+  color: #084298;
+  background-color: #cfe2ff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
 }
