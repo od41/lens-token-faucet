@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 
-const FAUCET_CONTRACT_ADDRESS = "0xe524B7EeE466cebBD1F9A55aEE8D488FA15E60E9";
+const FAUCET_CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS!;
 const FAUCET_ABI = ["function mint(address to, uint256 amount) external"];
 
 // Replace with your Lens Sepolia RPC URL
