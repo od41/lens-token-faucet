@@ -11,7 +11,10 @@ const PRIVATE_KEY = process.env.SIGNING_KEY!;
 export async function POST(req: Request) {
   // Verify origin
   const origin = req.headers.get("origin");
-  if (origin !== "http://localhost:3000") {
+  if (
+    origin !== "http://localhost:3000" &&
+    origin !== "https://lens-token-faucet.vercel.app"
+  ) {
     return new Response(JSON.stringify({ message: "Forbidden" }), {
       status: 403,
     });
